@@ -9,5 +9,3 @@ strang.o: strang.c strang.h
 
 clean:
 	rm *.o
-	
-	
