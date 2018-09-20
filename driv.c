@@ -2,3 +2,4 @@
 #include "strang.h"
 
 wiaoeghu
+hej jimmy
