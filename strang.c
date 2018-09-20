@@ -38,8 +38,8 @@ char* stringAdd(char* stringStart, char* stringEnd){
     for(size=0;i<size;i++){
 
         *p = *s1;
-        p += CONST_FOUR_BYTE;
-        s1 += CONST_FOUR_BYTE;
+        p += 1;
+        s1 += 1;
     }
     //Kopierar andra strängen till newString
     i = 0;
@@ -47,12 +47,12 @@ char* stringAdd(char* stringStart, char* stringEnd){
     for(size=0;i<size;i++){
 
         *p = *s2;
-        p += CONST_FOUR_BYTE;
-        s2 += CONST_FOUR_BYTE;
+        p += 1;
+        s2 += 1;
     }
 
     // Add \0
-    p += CONST_FOUR_BYTE;
+    p += 1;
     *p = '\0';
     
     return newString; 
@@ -88,8 +88,8 @@ int stringCompare(char* firstString, char* secoundString){
            }
            
         }
-        tempFirstString += CONST_FOUR_BYTE;
-        tempSecoundString += CONST_FOUR_BYTE;
+        tempFirstString += 1;
+        tempSecoundString += 1;
     }
 
      if(stringLenght(firstString) < stringLenght(secoundString)){
@@ -114,8 +114,8 @@ char *stringLowerToUpper(char* string){
    for(i=0;i<stringLenght(string); i++){
 
       *pTempString = charLowerToUpper(*p);
-      tempString += CONST_FOUR_BYTE;
-       p += CONST_FOUR_BYTE;
+      tempString += 1;
+       p += 1;
    }
    return tempString;
 }
@@ -138,13 +138,13 @@ char charLowerToUpper(char lower){
 char* stringReverse(char* string){
     
     char * tempString = (char*)malloc(stringLenght(string));
-    char * pEnd = string + (CONST_FOUR_BYTE * stringLenght(string) - 1);
+    char * pEnd = string + (1 * stringLenght(string) - 1);
     int i;
 
     for(i=0;i<stringLenght(string);i++){
 
        * tempString = *pEnd;
-       pEnd -= CONST_FOUR_BYTE;
+       pEnd -= 1;
     }
 
     return tempString;
@@ -152,7 +152,7 @@ char* stringReverse(char* string){
 
 char * stringShift(char* string, int userChoice){
 
-    char * pEnd = string + (CONST_FOUR_BYTE * stringLenght(string) - 1);
+    char * pEnd = string + (1 * stringLenght(string) - 1);
     char temp = *string;
 
     if(userChoice == CONST_MENU_CHOICE_7){
