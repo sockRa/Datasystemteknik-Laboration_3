@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 lab_3: huvud.o driv.o strang.o
-=======
-lab3: huvud.o driv.o strang.o
->>>>>>> 5545ab0ee5c3f32f26680f4028801f626fbc32fa
 	gcc -Wall -o lab3 huvud.o driv.o strang.o
 huvud.o: huvud.c driv.h
 	gcc -c huvud.c

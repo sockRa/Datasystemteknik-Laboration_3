@@ -22,10 +22,7 @@ char* stringAdd(char* stringStart, char* stringEnd){
     int size = 0;
     int i = 0;
     size = stringLenght(stringStart) + stringLenght(stringEnd) + 1; //Size + 1 för radslut
-
-    //Debug print
-    printf("Size = %d",size);
-
+    
     char *newString;
     
     newString = (char *) malloc(size);
