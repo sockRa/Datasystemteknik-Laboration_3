@@ -2,6 +2,6 @@
 #include "strang.h" //glöm inte att ta bort det här!!!
 
 int main(){
-
-        printf("K är %d bokstäver långt\n", stringLenght("Kattskit"));
+        
+        printf("Kattskit är %d bokstäver långt\n", stringLenght("kattskit"));
 }

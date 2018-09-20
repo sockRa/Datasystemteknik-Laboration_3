@@ -4,7 +4,7 @@ int stringLenght(char* string){
     int counter = 0;
    
     do{
-        string += CONST_FOUR_BYTE;
+        string += 1;
         counter++;
 
     }while(*string != '\0');
