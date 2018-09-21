@@ -28,7 +28,7 @@ char* stringAdd(char* stringStart, char* stringEnd){
 
     char *newString;
     
-    newString = (char *) malloc(size);
+    newString = (char *) malloc(size);      //Får inte ha malloc i strang.c , i driv.c ska den ligga.
 
     char *p = newString;
     char *s1 = stringStart;
